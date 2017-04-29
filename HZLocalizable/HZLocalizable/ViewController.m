@@ -6,7 +6,7 @@
 //  Copyright © 2017年 zzgo. All rights reserved.
 //
 
-
+#import "HZLanguageViewController.h"
 #import "ViewController.h"
 #import "HZMacro.h"
 
@@ -20,11 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    //参考自定义文字部分
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin)
+                                                         forBarMetrics:UIBarMetricsDefault];
+    
     self.languageLabel.text=HZLocal(@"hello,world!");
-    [self.nextButton setTitle:HZLocal(@"Next") forState:UIControlStateNormal];
+    [self.nextButton setTitle:HZLocal(@"Next") 
+                     forState:UIControlStateNormal];
+    
 }
 
+- (IBAction)tapNextButton:(id)sender {
+    HZLanguageViewController *languageVC=[HZLanguageViewController new];
+    [self.navigationController pushViewController:languageVC animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

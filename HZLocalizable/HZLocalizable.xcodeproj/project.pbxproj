@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		254597801EB4B71C00F59E7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 254597821EB4B71C00F59E7A /* Localizable.strings */; };
+		254597861EB4B93D00F59E7A /* HZLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 254597851EB4B93D00F59E7A /* HZLanguageViewController.m */; };
 		25A04C131EB1E9C0002769D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A04C121EB1E9C0002769D8 /* main.m */; };
 		25A04C161EB1E9C0002769D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A04C151EB1E9C0002769D8 /* AppDelegate.m */; };
 		25A04C191EB1E9C0002769D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A04C181EB1E9C0002769D8 /* ViewController.m */; };
@@ -23,6 +24,8 @@
 		2545977C1EB4B6B100F59E7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		254597811EB4B71C00F59E7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		254597831EB4B72100F59E7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		254597841EB4B93D00F59E7A /* HZLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZLanguageViewController.h; sourceTree = "<group>"; };
+		254597851EB4B93D00F59E7A /* HZLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZLanguageViewController.m; sourceTree = "<group>"; };
 		25A04C0E1EB1E9C0002769D8 /* HZLocalizable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZLocalizable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A04C121EB1E9C0002769D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25A04C141EB1E9C0002769D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				25A04C1A1EB1E9C0002769D8 /* Main.storyboard */,
 				25A04C171EB1E9C0002769D8 /* ViewController.h */,
 				25A04C181EB1E9C0002769D8 /* ViewController.m */,
+				254597841EB4B93D00F59E7A /* HZLanguageViewController.h */,
+				254597851EB4B93D00F59E7A /* HZLanguageViewController.m */,
 				254597821EB4B71C00F59E7A /* Localizable.strings */,
 			);
 			name = Demo;
@@ -190,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A04C191EB1E9C0002769D8 /* ViewController.m in Sources */,
+				254597861EB4B93D00F59E7A /* HZLanguageViewController.m in Sources */,
 				25A04C161EB1E9C0002769D8 /* AppDelegate.m in Sources */,
 				25A04C131EB1E9C0002769D8 /* main.m in Sources */,
 				25A04C2B1EB1EC5D002769D8 /* HZLanguageManager.m in Sources */,

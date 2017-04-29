@@ -86,6 +86,7 @@ static NSString * const kLanguageSet = @"kLanguageSet";
         case HZLanguageTypeSystem:
             
             self.languageString=kSystem;
+            break;
         case HZLanguageTypeEnglish:
             
             self.languageString = kEN;
@@ -94,10 +95,7 @@ static NSString * const kLanguageSet = @"kLanguageSet";
             
             self.languageString = kCH;
             break;
-        default:
-            self.languageString = kCH;
-            self.languageType   = HZLanguageTypeChineseSimple;
-            break;
+
     }
     
     if ([_languageString isEqualToString:kEN] || [_languageString isEqualToString:kCH]) {

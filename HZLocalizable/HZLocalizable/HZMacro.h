@@ -1,10 +1,6 @@
-//
-//  HZMacro.h
-//  QLiveStream
-//
-//  Created by quseit02 on 16/7/28.
-//  Copyright © 2016年 quseit. All rights reserved.
-//
+
+
+
 
 #import "HZLanguageManager.h"
 
