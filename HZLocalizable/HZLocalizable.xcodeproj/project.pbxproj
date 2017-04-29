@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254597801EB4B71C00F59E7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 254597821EB4B71C00F59E7A /* Localizable.strings */; };
 		25A04C131EB1E9C0002769D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A04C121EB1E9C0002769D8 /* main.m */; };
 		25A04C161EB1E9C0002769D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A04C151EB1E9C0002769D8 /* AppDelegate.m */; };
 		25A04C191EB1E9C0002769D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A04C181EB1E9C0002769D8 /* ViewController.m */; };
@@ -17,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		254597781EB4B45C00F59E7A /* HZMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZMacro.h; sourceTree = "<group>"; };
+		2545977B1EB4B6B100F59E7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		2545977C1EB4B6B100F59E7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		254597811EB4B71C00F59E7A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		254597831EB4B72100F59E7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		25A04C0E1EB1E9C0002769D8 /* HZLocalizable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZLocalizable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A04C121EB1E9C0002769D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25A04C141EB1E9C0002769D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +48,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		254597791EB4B45E00F59E7A /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				254597781EB4B45C00F59E7A /* HZMacro.h */,
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		2545977A1EB4B64F00F59E7A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				25A04C1A1EB1E9C0002769D8 /* Main.storyboard */,
+				25A04C171EB1E9C0002769D8 /* ViewController.h */,
+				25A04C181EB1E9C0002769D8 /* ViewController.m */,
+				254597821EB4B71C00F59E7A /* Localizable.strings */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
 		25A04C051EB1E9C0002769D8 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +86,8 @@
 		25A04C101EB1E9C0002769D8 /* HZLocalizable */ = {
 			isa = PBXGroup;
 			children = (
+				2545977A1EB4B64F00F59E7A /* Demo */,
+				254597791EB4B45E00F59E7A /* Macro */,
 				25A04C281EB1EC5D002769D8 /* HZLanguageManager */,
 				25A04C111EB1E9C0002769D8 /* Supporting Files */,
 				25A04C141EB1E9C0002769D8 /* AppDelegate.h */,
@@ -68,9 +95,6 @@
 				25A04C1D1EB1E9C0002769D8 /* Assets.xcassets */,
 				25A04C221EB1E9C0002769D8 /* Info.plist */,
 				25A04C1F1EB1E9C0002769D8 /* LaunchScreen.storyboard */,
-				25A04C1A1EB1E9C0002769D8 /* Main.storyboard */,
-				25A04C171EB1E9C0002769D8 /* ViewController.h */,
-				25A04C181EB1E9C0002769D8 /* ViewController.m */,
 			);
 			path = HZLocalizable;
 			sourceTree = "<group>";
@@ -80,7 +104,6 @@
 			children = (
 				25A04C121EB1E9C0002769D8 /* main.m */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -124,6 +147,7 @@
 				TargetAttributes = {
 					25A04C0D1EB1E9C0002769D8 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4GK5VN4446;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A04C211EB1E9C0002769D8 /* LaunchScreen.storyboard in Resources */,
+				254597801EB4B71C00F59E7A /* Localizable.strings in Resources */,
 				25A04C1E1EB1E9C0002769D8 /* Assets.xcassets in Resources */,
 				25A04C1C1EB1E9C0002769D8 /* Main.storyboard in Resources */,
 			);
@@ -174,10 +199,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		254597821EB4B71C00F59E7A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				254597811EB4B71C00F59E7A /* zh-Hans */,
+				254597831EB4B72100F59E7A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		25A04C1A1EB1E9C0002769D8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				25A04C1B1EB1E9C0002769D8 /* Base */,
+				2545977B1EB4B6B100F59E7A /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			path = .;
@@ -187,6 +222,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				25A04C201EB1E9C0002769D8 /* Base */,
+				2545977C1EB4B6B100F59E7A /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			path = .;
@@ -199,6 +235,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -247,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -289,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4GK5VN4446;
 				INFOPLIST_FILE = HZLocalizable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzgo.HZLocalizable;
@@ -300,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4GK5VN4446;
 				INFOPLIST_FILE = HZLocalizable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zzgo.HZLocalizable;
