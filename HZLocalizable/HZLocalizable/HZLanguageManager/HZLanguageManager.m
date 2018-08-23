@@ -69,6 +69,10 @@ static NSString * const kLanguageSet = @"kLanguageSet";
         self.languageType= HZLanguageTypeSystem;
     }
     
+    if ([_languageString isEqualToString:kEN] || [_languageString isEqualToString:kCH]) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:_languageString ofType:kProj];
+        self.bundle = [NSBundle bundleWithPath:path];
+    }
     
     return self;
 }
@@ -98,16 +102,21 @@ static NSString * const kLanguageSet = @"kLanguageSet";
 
     }
     
-    if ([_languageString isEqualToString:kEN] || [_languageString isEqualToString:kCH]) {
-        NSString *path = [[NSBundle mainBundle] pathForResource:_languageString ofType:kProj];
-        self.bundle = [NSBundle bundleWithPath:path];
-    }
+    //bundle 设置
+    [self resetBundle];
     
     //设置语言，并作记录保存
     [[NSUserDefaults standardUserDefaults] setObject:_languageString forKey:kLanguageSet];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     //使用通知更改文字    [[NSNotificationCenter defaultCenter] postNotificationName:kNoticeLanguageChange object:nil];
+}
+
+- (void)resetBundle{
+    if ([_languageString isEqualToString:kEN] || [_languageString isEqualToString:kCH]) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:_languageString ofType:kProj];
+        self.bundle = [NSBundle bundleWithPath:path];
+    }
 }
 
 - (NSString *)stringWithKey:(NSString *)key table:(NSString *)table

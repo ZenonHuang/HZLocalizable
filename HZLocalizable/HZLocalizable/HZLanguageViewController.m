@@ -31,6 +31,15 @@ static NSString *SeletedCellProfileCellIdentifier=@"SelectedCellProfileCellTable
    
     self.selectArray=@[HZLocal(@"Follow the system"),@"中文",@"English"];
     
+    //创建一个UIButton
+    UIButton *backButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
+    [backButton setTitle:HZLocal(@"Back") forState:UIControlStateNormal];
+    [backButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(backItemClick) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = backItem;
+    
+    
     //设置选中的语言
     if ([HZLanguageManager defaultManager].currentLanguage==HZLanguageTypeSystem) {
         self.seletedIndex=@0;
@@ -45,6 +54,9 @@ static NSString *SeletedCellProfileCellIdentifier=@"SelectedCellProfileCellTable
     [self.view addSubview:self.tableView];
 }
 
+- (void)backItemClick{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 #pragma mark - response events
 -(void)onRightNavButtonTapped:(UIBarButtonItem *)sender event:(UIEvent *)event{
     

@@ -28,6 +28,6 @@ typedef NS_ENUM(NSUInteger, HZLanguageType) {
 
 - (void)changeLanguageType:(HZLanguageType)type;
 - (NSString *)stringWithKey:(NSString *)key table:(NSString *)table;
--(HZLanguageType)currentLanguage;
+- (HZLanguageType)currentLanguage;
 
 @end

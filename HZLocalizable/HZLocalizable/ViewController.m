@@ -21,10 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    //参考自定义文字部分
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin)
-                                                         forBarMetrics:UIBarMetricsDefault];
-    
+
     self.languageLabel.text=HZLocal(@"hello,world!");
     [self.nextButton setTitle:HZLocal(@"Next") 
                      forState:UIControlStateNormal];
